@@ -34,7 +34,7 @@ return (
         Res()
     }}>Add</button>
     // <br/>
-    // <button onClick={Res('Minus')}>Sub</button>
+    // <button onClick={Res('Minus')}>Subtract</button>
     // <br/>
     // <button onClick={Res('Product')}>Mul</button>
     // <br/>
