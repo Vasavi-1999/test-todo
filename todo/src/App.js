@@ -1,11 +1,13 @@
 import './App.css';
+import Table from './Components/Table';
+//import Calci from './Components/Calci';
 //import Counter from './Components/counter';
-import Form from './Components/Form';
+
 
 function App() {
   return (
     <div>
-    <Form />
+    <Table />
     </div>
   );
 }
