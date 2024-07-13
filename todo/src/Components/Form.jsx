@@ -33,12 +33,12 @@ return (
         setOperation('Plus')
         Res()
     }}>Add</button>
-    // <br/>
-    // <button onClick={Res('Minus')}>Subtract</button>
-    // <br/>
-    // <button onClick={Res('Product')}>Mul</button>
-    // <br/>
-    // <button onClick={Res('Division')}>Div</button>
+     <br/>
+     <button onClick={Res('Minus')}>Subtract</button>
+     <br/>
+     <button onClick={Res('Product')}>Mul</button>
+     <br/>
+     <button onClick={Res('Division')}>Div</button>
     <h1>{result}</h1>
     </div>
 )

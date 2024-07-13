@@ -1,5 +1,5 @@
-function Table() {
-  const employeeDetails = [
+function MapsExample() {
+  const persons = [
     {
       No: 1,
       FirstName: "Tharun",
@@ -15,7 +15,6 @@ function Table() {
   ];
   return (
     <div>
-      <h1>Employee Details</h1>
       <table border={"1"}>
         <tr>
           <th>S.no</th>
@@ -23,18 +22,19 @@ function Table() {
           <th>LastName</th>
           <th>Age</th>
         </tr>
-
-        {employeeDetails.map((employee) => (
-          <tr>
-            <td>{employee.No}</td>
-            <td>{employee.FirstName}</td>
-            <td>{employee.LastName}</td>
-            <td>{employee.Age}</td>
-          </tr>
-        ))}
+        {persons.map((person) => {
+          return (
+            <tr>
+              {" "}
+              {Object.keys(person).map((key) => {
+                return <td>{person[key]}</td>;
+              })}
+            </tr>
+          );
+        })}
       </table>
     </div>
   );
 }
 
-export default Table;
+export default MapsExample;
