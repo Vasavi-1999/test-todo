@@ -25,7 +25,6 @@ function MapsExample() {
         {persons.map((person) => {
           return (
             <tr>
-              {" "}
               {Object.keys(person).map((key) => {
                 return <td>{person[key]}</td>;
               })}
