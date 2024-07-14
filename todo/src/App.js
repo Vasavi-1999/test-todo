@@ -1,6 +1,8 @@
 import './App.css';
+import ApiCall from './Components/ApiCall';
+//import ApiCall from './Components/ApiCall';
 //import Example from './Components/Example';
-import MuiTable from './Components/MuiTable';
+//import MuiTable from './Components/MuiTable';
 //import Table from './Components/Table';
 //import MapsExample from './Components/MapsExample';
 //import Calci from './Components/Calci';
@@ -10,7 +12,7 @@ import MuiTable from './Components/MuiTable';
 function App() {
   return (
     <div>
-    <MuiTable />
+    <ApiCall />
     
     </div>
   );
