@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 function Table() {
+
+  const [persons, setPersons] = useState([
+    {
+      No: '',
+      FirstName: '',
+      LastName: '',
+      Age: '',
+    }
+  ])
   const employeeDetails = [
     {
       No: 1,
@@ -13,6 +24,16 @@ function Table() {
       Age: 25,
     },
   ];
+
+  const addfields = () => {
+    let object = {
+      No: '',
+      FirstName: '',
+      LastName: '',
+      Age: '',
+    }
+    setPersons([persons,object])
+  }
   return (
     <div>
       <h1>Employee Details</h1>
@@ -33,6 +54,8 @@ function Table() {
           </tr>
         ))}
       </table>
+      <br/>
+      <button onClick={addfields}>Add persons</button>
     </div>
   );
 }
